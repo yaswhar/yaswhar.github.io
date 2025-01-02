@@ -80,6 +80,8 @@ th,
 tr,
 p{
    text-indent:50px;
+   text-align: justify;
+   text-justify: inter-word;
 },
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
