@@ -78,10 +78,7 @@ body,
 td,
 th,
 tr,
-p {
-   text-align: justify;
-/*    text-justify: inter-word;
-}, */
+p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
