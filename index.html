@@ -41,7 +41,8 @@
 <!--                   <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
 <!--                   <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
 <!--                   <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
-                  <a href="https://github.com/yaswhar/">Github</a>
+                  <a href="https://github.com/yaswhar/">GitHub</a> &nbsp;/&nbsp;
+		<a href="https://linkedin.com/in/zafariyashar/">LinkedIn</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
@@ -81,7 +82,43 @@
           </tbody></table>
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-		<tr>
+	<tr onmouseout="hat_stop()" onmouseover="hat_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='hat_image'><img src='images/hat1.jpg'></div>
+                  <img src='images/hat2.jpg'>
+                </div>
+                <script type="text/javascript">
+                  function hat_start() {
+                    document.getElementById('hat_image').style.opacity = "1";
+                  }
+
+                  function hat_stop() {
+                    document.getElementById('hat_image').style.opacity = "0";
+                  }
+                  hat_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://github.com/yaswhar/WalkRunHat">
+                  <span class="papertitle">Activity Recognition Hat</span>
+                </a>
+		<br>
+		<em>Course Project</em>
+                <br>
+                <em>Measurement & Control Systems</em> - <a href="http://sharif.edu/~nejat/">Prof. Hossein Nejat</a> - Winter 2023
+		<br>
+                <a href="https://github.com/yaswhar/WalkRunHat">code</a> /
+                
+                <p></p>
+                <p>This project implemented an activity recognition system using a hat fitted with sensors. The hat can recognize walking and running.</p>
+              </td>
+            </tr>
+
+
+
+		
+	<tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <img src="images/eeg.jpg" alt="brainpca" width="160" height="160">
               </td>
@@ -94,7 +131,7 @@
                 <br>
                 <em>Signals & Systems</em> - <a href="https://explorecourses.stanford.edu/instructor/aghajan">Prof. Hamid K. Aghajan</a> - Spring 2023
 		<br>
-		<a href="https://github.com/yaswhar/eeg-Olfactory-Biomarker"></a>
+		<a href="https://github.com/yaswhar/eeg-Olfactory-Biomarker">code</a>
 		<p></p>
                 <p>The goal of this project was to identify early biomarkers for Alzheimer's disease and related brain disorders through analysis of EEG signals during olfactory stimulation.</p>
               </td>
