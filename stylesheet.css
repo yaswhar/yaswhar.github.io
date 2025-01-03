@@ -79,15 +79,6 @@ td,
 th,
 tr,
 p,
-div {
-  text-align: justify;
-}
-
-div:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
