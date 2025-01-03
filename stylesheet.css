@@ -75,7 +75,12 @@ a:hover {
 }
 
 body,
-td,
+td:first-child {
+  font-size: 20px;
+  hyphens: auto;
+  text-align: justify;
+  text-align-last: justify;
+}
 th,
 tr,
 p,
