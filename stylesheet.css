@@ -140,3 +140,125 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* ---- Layout (replaces the per-table inline styles) ---- */
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+table.page,
+table.section {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table.page {
+  max-width: 800px;
+}
+
+td.header-text {
+  padding: 2.5%;
+  width: 63%;
+  vertical-align: middle;
+}
+
+td.header-photo {
+  padding: 2.5%;
+  width: 37%;
+  max-width: 37%;
+}
+
+td.header-photo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+td.heading {
+  padding: 16px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Project / paper cards: media on the left, text on the right */
+table.cards td.media {
+  padding: 16px;
+  width: 40%;
+  vertical-align: middle;
+}
+
+table.cards td.text {
+  padding: 8px;
+  width: 60%;
+  vertical-align: middle;
+}
+
+td.media video,
+td.media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+p.caption {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #555555;
+  text-align: center;
+}
+
+p.caption a {
+  font-size: 12px;
+}
+
+p.justify {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+p.compact {
+  margin: 8px 0;
+}
+
+span.pending {
+  color: #777777;
+}
+
+/* ---- Phones: stack the header and every card ---- */
+@media (max-width: 600px) {
+  td.header-text,
+  td.header-photo,
+  table.cards td.media,
+  table.cards td.text {
+    display: block;
+    width: auto;
+    max-width: none;
+  }
+
+  td.header-text {
+    padding: 16px 16px 0;
+  }
+
+  td.header-photo {
+    padding: 8px 25% 16px;
+  }
+
+  table.cards td.media {
+    padding: 16px 16px 4px;
+  }
+
+  table.cards td.text {
+    padding: 4px 16px 16px;
+  }
+
+  p.justify {
+    text-align: left;
+  }
+}
